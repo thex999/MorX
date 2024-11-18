@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none !important;
+}
+.bg-radial-gradient {
+  background-image: radial-gradient(
+    circle at 10% 20%,
+    rgba(4, 159, 108, 1) 0%,
+    rgba(194, 254, 113, 1) 90.1%
+  );
+}
+
+/* Additional styles */
+@import '/src/app/css/additional-styles//utility-patterns.css';
+@import '/src/app/css/additional-styles/toggle-switch.css';
+@import '/src/app/css/additional-styles/range-slider.css';
+@import '/src/app/css/additional-styles/theme.css';
+
+@import 'tailwindcss/utilities';
+
+/* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
+@layer utilities {
+    .rtl {
+        direction: rtl;
+    }
+}
+
+/* See Alpine.js: https://github.com/alpinejs/alpine#x-cloak */
+[x-cloak=""] {
+    display: none;
+}
+@layer base {
+  :root {
+    --background: 0 0% 3.09%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+  }
+
+  
+}
+.testimonials::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  background: url('/public/community.svg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  content: '';
+}
+
+.hero-area::before {
+  display: block;
+  position: absolute;
+  top: 8rem;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  background: url('/public/community.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  content: '';
+}
+
+.community-1 {
+  background: linear-gradient(227deg, #c0adff 0%, #6457c6 95.09%);
+  @apply w-full rounded-2xl bg-white p-7 transition-all duration-300 hover:-translate-y-1 md:col-span-1 lg:col-span-2 lg:row-span-2 lg:p-0;
+}
+
+.community-2 {
+  background: linear-gradient(61deg, #000 20.68%, #393d33 99.76%);
+  @apply w-full rounded-2xl bg-white transition-all duration-300 hover:-translate-y-1 md:col-span-1 lg:col-span-1 lg:row-span-1;
+}
+
+.community-3 {
+  background: linear-gradient(72deg, #44c3df 6.93%, #6de5cf 98.71%);
+  @apply w-full rounded-2xl bg-white transition-all duration-300 hover:-translate-y-1 md:col-span-1 lg:col-span-1 lg:row-span-1;
+}
+.community-4 {
+  background: linear-gradient(72deg, #3a6df0 3.09%, #ee95d5 96.55%);
+  @apply w-full rounded-2xl bg-white transition-all duration-300 hover:-translate-y-1 md:col-span-1 lg:col-span-2 lg:row-span-1;
+}
+
+.repo-btn {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  background: rgba(249, 250, 251, 0.2);
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+}
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
