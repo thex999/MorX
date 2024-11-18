@@ -1,6 +1,6 @@
 
 import React from 'react'
-import FeaturedPage from './(pages)/featured/page'
+
 import Navbar from '@/components/global/navbar'
 import Footer from "@/components/global/Footer";
 import './(pages)/css/additional-styles/theme.css'
