@@ -5,7 +5,7 @@ import { CheckCircle, Lock, Shield } from 'lucide-react'
 
 export default function Whc() {
   return (
-    <section id="features" className="py-20 lg:py-32 bg-">
+    <section id="features" className="py-20 lg:py-32 bg-white">
       <div className="container mx-auto px-4 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
