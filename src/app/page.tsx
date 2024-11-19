@@ -45,9 +45,9 @@ export default function Home() {
      
     <AbhiloHero></AbhiloHero>
    
-    <BackgroundWrapper>
+ 
 <Whc></Whc>
-</BackgroundWrapper>
+
 <BackgroundWrapper>
   <Services />
 </BackgroundWrapper>
